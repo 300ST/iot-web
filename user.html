@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: #f5f6fa;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .sidebar {
+            background-color: #2d3e50;
+            width: 200px;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar .logo {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+        }
+
+        .sidebar nav ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .profile-header h1 {
+            margin-bottom: 10px;
+        }
+
+        .profile-header p {
+            color: #666;
+        }
+
+        .profile-info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile-info h2 {
+            margin-bottom: 15px;
+        }
+
+        .profile-info p {
+            margin-bottom: 10px;
+        }
+
+        .edit-button {
+            background-color: #4285f4;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .edit-button:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">Admin Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#">Task</a></li>
+                    <li><a href="user.html">User Profile</a></li>
+                    <li><a href="#">Messages</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="profile-header">
+                <img src="https://scontent.furt1-1.fna.fbcdn.net/v/t39.30808-6/408060416_3536605699923763_1108778105520275732_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGiMfvSzz5AWP-KRPNqgG0XX9P-w3CdsiBf0_7DcJ2yILU5qaYlnqwNhq_iiCwL2ofKI0F2sqJCANJHexVsqQ0Q&_nc_ohc=z-z2rXbjfI8Q7kNvgFUVCDA&_nc_ht=scontent.furt1-1.fna&_nc_gid=AJNlcboSfscftI6Mhd3ehZu&oh=00_AYBt9WBgBdCCOAetlX9oVen26W8iZvILROXIb0FLf7AsgQ&oe=6721787D" alt="Profile Picture">
+                <div>
+                    <h1>พีระพัฒน์</h1>
+                    <p>@boostuser</p>
+                </div>
+            </div>
+
+            <section class="profile-info">
+                <h2>Profile Information</h2>
+                <p><strong>Email:</strong> peerapatpimloy@example.com</p>
+                <p><strong>Phone:</strong> +66 1234 5678</p>
+                <p><strong>Address:</strong> Bangkok, Thailand</p>
+                <p><strong>Joined:</strong> January 2023</p>
+                <button class="edit-button">Edit Profile</button>
+            </section>
+
+            <section class="profile-info">
+                <h2>User Activities</h2>
+                <p><strong>Last Login:</strong> October 25, 2024</p>
+                <p><strong>Tasks Completed:</strong> 10</p>
+                <p><strong>Active Devices:</strong> 2</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
