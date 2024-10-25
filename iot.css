@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 23%;
+    text-align: center;
+}
+
+.graph-section {
+    margin-bottom: 20px;
+}
+
+#visitorChart {
+    width: 500px !important;
+    height: 300px !important;
+}
+
+.tasks {
+    margin-bottom: 20px;
+}
+
+.invite-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.invite-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.graph-section {
+    margin-bottom: 20px;
+    height: 400px; /* Set a fixed height */
+    position: relative; /* Allow positioning for canvas */
+}
+
+
+.main-content {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: space-between; /* จัดให้มีระยะห่าง */
+    flex-wrap: wrap; /* ทำให้สามารถ wrap ได้ */
+    padding: 20px;
+}
+
+.graph-section {
+    width: 60%; /* กำหนดความกว้าง */
+    margin-right: 20px; /* ระยะห่างด้านขวา */
+}
+
+.invite-section {
+    width: 35%; /* กำหนดความกว้าง */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+.tasks {
+    width: 35%; /* กำหนดความกว้าง */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+.task-progress {
+    display: flex; /* ใช้ Flexbox */
+    align-items: center; /* จัดแนวให้กึ่งกลาง */
+    justify-content: center; /* จัดกึ่งกลาง */
+}
+
+.chart-container {
+    width: 50px; /* ความกว้างใหม่สำหรับกราฟ */
+    height: 50px; /* ความสูงใหม่สำหรับกราฟ */
+}
+
+.task-percentage {
+    margin-left: 10px; /* ระยะห่างระหว่างกราฟกับข้อความ */
+    font-size: 1.5em; /* ขนาดตัวอักษรใหม่ */
+    font-weight: bold; /* หนักตัวอักษร */
+}
+.stat-box {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    transition: transform 0.2s; /* เพิ่มเอฟเฟกต์ hover */
+}
+
+.stat-box:hover {
+    transform: translateY(-5px); /* ยกขึ้นเมื่อ hover */
+}
+
